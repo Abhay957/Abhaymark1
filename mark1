@@ -1,0 +1,48 @@
+var readLine = require('readline-sync');
+var score = 0;
+var user = readLine.question('What is your name? ');
+console.log('*********');
+console.log('Hi ' + user + ' lets see how well do you know me?');
+console.log('*********');
+console.log('\n' + '   Lets Begin!' + '\n');
+function know(question, answer) {
+  var ans = readLine.question(question);
+  if (ans === answer) {
+    console.log('Correct answer!');
+    score = score + 1;
+  }
+  else {
+    console.log('Incorrect answer');
+    console.log('Correct answer is ' + answer);
+  }
+  console.log('---------');
+  console.log(user + ' your current score is ' + score + '\n');
+}
+var questionSet = [
+  {
+    question: 'What is my name? ',
+    answer: 'abhay'
+  },
+  {
+    question: 'What is my age? ',
+    answer: '23'
+  },
+  {
+    question: 'I am from which state? ',
+    answer: 'uttar pradesh'
+  },
+  {
+    question: 'I am applying for which course? ',
+    answer: 'neogcamp level one'
+  },
+  {
+    question: 'I am from which place? ',
+    answer: 'shahjahanpur',
+  }
+];
+
+for (var i = 0; i < questionSet.length; i = i + 1) {
+  var tol = questionSet[i];
+  know(tol.question, tol.answer);
+}
+console.log('\n' + 'Thanks for playing' + '\n' + 'Your final score is ' + score);
