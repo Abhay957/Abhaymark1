@@ -2,4 +2,4 @@
 
 I have made this project using the learnings from neogcamp.
 
-It is quiz 'How well do you know me?'.
+It is a quiz on 'How well do you know me?'.
