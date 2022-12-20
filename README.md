@@ -15,4 +15,4 @@ For an incorrect answer you get zero pint and also you get to know the correct a
 Final score is shown at the end.
 
 CLI app look:
-<img src="images/markone.png" \>
+<img src="images/markone.png" >
